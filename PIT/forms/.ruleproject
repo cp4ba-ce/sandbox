@@ -9,8 +9,6 @@
   </paths>
   <paths xsi:type="ilog.rules.studio.model.bom:BOMPath" pathID="BOM">
     <entries xsi:type="ilog.rules.studio.model.bom:BOMEntry" name="model" url="platform:/forms/bom/model.bom"/>
-    <entries xsi:type="ilog.rules.studio.model.bom:DecisionLibraryBOMEntry" name="gov.ny.its.pit:adsUtilLibrary#1.0.1" packageId="gov.ny.its.pit:adsUtilLibrary" version="1.0.1"/>
-    <entries xsi:type="ilog.rules.studio.model.bom:DecisionLibraryBOMEntry" name="gov.ny.its.pit:adsReferenceDataLibrary#1.0.5" packageId="gov.ny.its.pit:adsReferenceDataLibrary" version="1.0.5"/>
   </paths>
   <modelFolders xsi:type="ilog.rules.studio.model.base:SourceFolder">
     <name>rules</name>

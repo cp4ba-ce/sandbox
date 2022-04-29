@@ -37,16 +37,6 @@
 
 <dependencies>
         <dependency>
-            <groupId>gov.ny.its.pit</groupId>
-            <artifactId>adsUtilLibrary</artifactId>
-            <version>1.0.1</version>
-        </dependency>
-        <dependency>
-            <groupId>gov.ny.its.pit</groupId>
-            <artifactId>adsReferenceDataLibrary</artifactId>
-            <version>1.0.5</version>
-        </dependency>
-        <dependency>
             <groupId>com.ibm.decision</groupId>
             <artifactId>engine-compact-runtime</artifactId>
         </dependency>
