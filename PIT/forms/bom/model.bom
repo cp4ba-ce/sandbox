@@ -101,7 +101,7 @@ public class CISSCodeId
         property "com.fasterxml.jackson.annotation.JsonTypeName" "CISSCodeId"
         property "de.generated" "true"
 {
-    domain {static c018, static c045, static c062, static p001, static p002, static p002Copy, static p003, static p004, static p005, static p006, static p007, static p008, static p009}
+    domain {static c018, static c045, static c062, static p001, static p002, static p003, static p004, static p005, static p006, static p007, static p008, static p009}
     public static final readonly CISSCodeId c018
                 property "ads.attributeId" "1"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "C018";
@@ -117,9 +117,6 @@ public class CISSCodeId
     public static final readonly CISSCodeId p002
                 property "ads.attributeId" "5"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "P002";
-    public static final readonly CISSCodeId p002Copy
-                property "ads.attributeId" "6"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "P002Copy";
     public static final readonly CISSCodeId p003
                 property "ads.attributeId" "7"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "P003";
