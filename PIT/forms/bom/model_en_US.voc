@@ -98,12 +98,10 @@ IT201.globals#phrase.navigation = {globals} of {this}
 
 # IT2141
 IT2141#concept.label = IT 214
-IT2141.CISSCodes#phrase.action = set the CISS Codes of {this} to {CISS Code}
-IT2141.CISSCodes#phrase.navigation = {CISS Code} of {this}
 IT2141.FEDAGI_RCOMP_AMT#phrase.action = set the FEDAGI_RCOMP_AMT of {this} to {FEDAGI_RCOMP_AMT}
 IT2141.FEDAGI_RCOMP_AMT#phrase.clearer = clear the FEDAGI_RCOMP_AMT of {this}
 IT2141.FEDAGI_RCOMP_AMT#phrase.navigation = {FEDAGI_RCOMP_AMT} of {this}
-IT2141.IT2141(java.util.List,AmountField1,AdjustedReasonCodeId,SwitchIndicatorValue,double,double,double,Globals,AmountField1,AmountField1,AmountField1,AmountField1,IndicatorType03Field,AmountField1,AmountField1)#phrase.navigation = a new {IT 214} where {0, CISS Code} {1, FEDAGI_RCOMP_AMT} {2, TEMP_ARC} {3, TEMP_CR_DENIED_IND} {4, TEMP_FAGI} {5, TEMP_LINE18} {6, TEMP_LINE30} {7, globals} {8, R_CR_LMT_AMT} {9, R_GRSS_INC_R_AMT} {10, R_RL_PROP_CR_AMT} {11, R_RL_PROP_TX_AMT} {12, R_RSDT_IND} {13, R_TX_AVL_CR_AMT} {14, R_TX_EXMPT_AMT}
+IT2141.IT2141(AmountField1,AdjustedReasonCodeId,SwitchIndicatorValue,double,double,double,Globals,AmountField1,AmountField1,AmountField1,AmountField1,IndicatorType03Field,AmountField1,AmountField1)#phrase.navigation = a new {IT 214} where {0, FEDAGI_RCOMP_AMT} {1, TEMP_ARC} {2, TEMP_CR_DENIED_IND} {3, TEMP_FAGI} {4, TEMP_LINE18} {5, TEMP_LINE30} {6, globals} {7, R_CR_LMT_AMT} {8, R_GRSS_INC_R_AMT} {9, R_RL_PROP_CR_AMT} {10, R_RL_PROP_TX_AMT} {11, R_RSDT_IND} {12, R_TX_AVL_CR_AMT} {13, R_TX_EXMPT_AMT}
 IT2141.TEMP_ARC#phrase.action = set the TEMP_ARC of {this} to {TEMP_ARC}
 IT2141.TEMP_ARC#phrase.clearer = clear the TEMP_ARC of {this}
 IT2141.TEMP_ARC#phrase.navigation = {TEMP_ARC} of {this}
@@ -122,8 +120,6 @@ IT2141.TEMP_LINE30#phrase.action = set the TEMP_LINE30 of {this} to {TEMP_LINE30
 IT2141.TEMP_LINE30#phrase.addition_setter = add {TEMP_LINE30} to the TEMP_LINE30 of {this}
 IT2141.TEMP_LINE30#phrase.navigation = {TEMP_LINE30} of {this}
 IT2141.TEMP_LINE30#phrase.subtraction_setter = subtract {TEMP_LINE30} from the TEMP_LINE30 of {this}
-IT2141.addTo_CISSCodes(CISSCode)#phrase.action = add {0} to the CISS Codes of {this}
-IT2141.clear_CISSCodes()#phrase.action = clear the CISS Codes of {this}
 IT2141.globals#phrase.action = set the globals of {this} to {globals}
 IT2141.globals#phrase.clearer = clear the globals of {this}
 IT2141.globals#phrase.navigation = {globals} of {this}
@@ -148,7 +144,6 @@ IT2141.r_TX_AVL_CR_AMT#phrase.navigation = {R_TX_AVL_CR_AMT} of {this}
 IT2141.r_TX_EXMPT_AMT#phrase.action = set the R_TX_EXMPT_AMT of {this} to {R_TX_EXMPT_AMT}
 IT2141.r_TX_EXMPT_AMT#phrase.clearer = clear the R_TX_EXMPT_AMT of {this}
 IT2141.r_TX_EXMPT_AMT#phrase.navigation = {R_TX_EXMPT_AMT} of {this}
-IT2141.removeFrom_CISSCodes(CISSCode)#phrase.action = remove {0} from the CISS Codes of {this}
 
 # IT229
 IT229#concept.label = IT 229

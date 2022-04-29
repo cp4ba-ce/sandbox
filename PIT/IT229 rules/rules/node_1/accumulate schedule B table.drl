@@ -3,5 +3,13 @@
   <name>accumulate schedule B table</name>
   <uuid>c17e2011-f4ad-4d75-b6db-e652cc5a8587</uuid>
   <locale>en_US</locale>
-  <definition><![CDATA[print "on est un peu dans la merde...]]></definition>
+  <definition><![CDATA[if
+    the value of the RPTR_QRPT_PD_AMT of decision is more than 0
+then
+	set the value of the RPTR_QRPT_PD_AMT of decision to 0 ;
+	for each QRPT Row in the QRPT_ROWs of decision : 
+        - set the value of the RPTR_QRPT_PD_AMT of decision to 
+        	the value of the RPTR_QRPT_PD_AMT of decision + 
+            (the RP_TX_PD_AMT of this QRPT Row - the PI_PD_RES_AMT of this QRPT Row - the STAR_CR_SCH_TX_AMT of this QRPT Row ) * the ALLOC_PCT of this QRPT Row ;
+]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

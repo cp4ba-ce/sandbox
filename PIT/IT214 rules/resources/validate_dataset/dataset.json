@@ -1,6 +1,11 @@
 {
   "inputForm": {
-    "CISSCodes": []
+    "FEDAGI_RCOMP_AMT": {},
+    "TEMP_CR_DENIED_IND": "Absent",
+    "TEMP_ARC": "A003"
   },
-  "IT201": {}
+  "IT201": {
+    "globals": {}
+  },
+  "referenceData": {}
 }

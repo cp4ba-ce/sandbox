@@ -63,7 +63,6 @@
         <module>IT229 rules</module>
         <module>PIT calculation</module>
         <module>forms</module>
-        <module>momo</module>
     </modules>
 
     <build>

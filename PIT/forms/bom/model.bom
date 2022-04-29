@@ -247,10 +247,6 @@ public class IT2141
         property "com.fasterxml.jackson.annotation.JsonTypeName" "IT2141"
         property "de.generated" "true"
 {
-    public java.util.List CISSCodes domain 0,* class CISSCode
-                property "ads.attributeId" "9"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "CISSCodes"
-                property update "true";
     public AmountField1 FEDAGI_RCOMP_AMT
                 property "ads.attributeId" "4"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "FEDAGI_RCOMP_AMT"
@@ -307,8 +303,7 @@ public class IT2141
                 property "ads.attributeId" "7"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "R_TX_EXMPT_AMT"
                 property update "true";
-    public IT2141(java.util.List CISSCodes domain 0,* class CISSCode, 
-        AmountField1 FEDAGI_RCOMP_AMT, 
+    public IT2141(AmountField1 FEDAGI_RCOMP_AMT, 
         AdjustedReasonCodeId TEMP_ARC, 
         SwitchIndicatorValue TEMP_CR_DENIED_IND, 
         double TEMP_FAGI, 
@@ -328,18 +323,6 @@ public class IT2141
                 property prototype "true";
     public IT2141()
                 property "dataio.default" "true";
-    public void addTo_CISSCodes(CISSCode CISSCodes)
-                property collectionAttribute "CISSCodes"
-                property update "true";
-    public void clear_CISSCodes()
-                property collectionAttribute "CISSCodes"
-                property update "true";
-    public void removeFrom_CISSCodes(CISSCode CISSCodes)
-                property collectionAttribute "CISSCodes"
-                property update "true";
-    public void set_CISSCodes(java.util.Collection CISSCodes domain 0,* class CISSCode)
-                property collectionAttribute "CISSCodes"
-                property update "true";
 }
 
 public class IT229
