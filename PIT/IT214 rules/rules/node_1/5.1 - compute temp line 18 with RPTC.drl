@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>5.1 - compute temp line 18 with RPTC</name>
+  <uuid>27d812cd-d802-42ea-a450-0d0309643192</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	the TEMP_CR_DENIED_IND of decision is Absent
+    and the claimed of the R_GRSS_INC_R_AMT of decision is more than 0
+then
+	set the TEMP_LINE18 of decision to the value of  the R_GRSS_INC_R_AMT of decision * the RPTC_RATE of 'reference data';
+  ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>3 - household gross income</name>
+  <uuid>4c2bfe14-2f13-4588-a1c3-198f826bc3c8</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set the value of the R_GRSS_INC_R_AMT of decision 
+	to max ( the claimed of the R_GRSS_INC_R_AMT of decision, max ( the TEMP_FAGI of decision , 0));
+    
+set the value of the R_GRSS_INC_R_AMT of decision
+	to round (the value of the R_GRSS_INC_R_AMT of decision, 2);
+    
+    
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

@@ -1,0 +1,667 @@
+
+
+public class AdjustedReasonCodeId
+        extends java.lang.Enum
+        property "ads.typeId" "9"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "AdjustedReasonCodeId"
+        property "de.generated" "true"
+{
+    domain {static a003, static a027, static a047, static a098, static a099, static a103, static a182, static c045}
+    public static final readonly AdjustedReasonCodeId a003
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "A003";
+    public static final readonly AdjustedReasonCodeId a027
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "A027";
+    public static final readonly AdjustedReasonCodeId a047
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "A047";
+    public static final readonly AdjustedReasonCodeId a098
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "A098";
+    public static final readonly AdjustedReasonCodeId a099
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "A099";
+    public static final readonly AdjustedReasonCodeId a103
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "A103";
+    public static final readonly AdjustedReasonCodeId a182
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "A182";
+    public static final readonly AdjustedReasonCodeId c045
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "C045";
+}
+
+public class AmountField1
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "AmountField1"
+        property "de.generated" "true"
+{
+    public double claimed
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "claimed"
+                property update "true";
+    public java.util.List codes domain 0,* class AdjustedReasonCodeId
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "codes"
+                property update "true";
+    public double value
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "value"
+                property update "true";
+    public AmountField1(double claimed, 
+        java.util.List codes domain 0,* class AdjustedReasonCodeId, 
+        double value)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public AmountField1()
+                property "dataio.default" "true";
+    public void addTo_codes(AdjustedReasonCodeId codes)
+                property collectionAttribute "codes"
+                property update "true";
+    public void clear_codes()
+                property collectionAttribute "codes"
+                property update "true";
+    public void removeFrom_codes(AdjustedReasonCodeId codes)
+                property collectionAttribute "codes"
+                property update "true";
+    public void set_codes(java.util.Collection codes domain 0,* class AdjustedReasonCodeId)
+                property collectionAttribute "codes"
+                property update "true";
+}
+
+public class CISSCode
+        property "ads.typeId" "8"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "CISSCode"
+        property "de.generated" "true"
+{
+    public CISSCodeId id
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "id"
+                property update "true";
+    public double value
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "value"
+                property update "true";
+    public CISSCode(CISSCodeId id, double value)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public CISSCode()
+                property "dataio.default" "true";
+}
+
+public class CISSCodeId
+        extends java.lang.Enum
+        property "ads.typeId" "10"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "CISSCodeId"
+        property "de.generated" "true"
+{
+    domain {static c018, static c045, static c062, static p001, static p002, static p002Copy, static p003, static p004, static p005, static p006, static p007, static p008, static p009}
+    public static final readonly CISSCodeId c018
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "C018";
+    public static final readonly CISSCodeId c045
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "C045";
+    public static final readonly CISSCodeId c062
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "C062";
+    public static final readonly CISSCodeId p001
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "P001";
+    public static final readonly CISSCodeId p002
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "P002";
+    public static final readonly CISSCodeId p002Copy
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "P002Copy";
+    public static final readonly CISSCodeId p003
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "P003";
+    public static final readonly CISSCodeId p004
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "P004";
+    public static final readonly CISSCodeId p005
+                property "ads.attributeId" "9"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "P005";
+    public static final readonly CISSCodeId p006
+                property "ads.attributeId" "10"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "P006";
+    public static final readonly CISSCodeId p007
+                property "ads.attributeId" "11"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "P007";
+    public static final readonly CISSCodeId p008
+                property "ads.attributeId" "12"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "P008";
+    public static final readonly CISSCodeId p009
+                property "ads.attributeId" "13"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "P009";
+}
+
+public class Exception
+        property "ads.typeId" "24"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Exception"
+        property "de.generated" "true"
+{
+    public string code
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "code"
+                property update "true";
+    public string ruleName
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ruleName"
+                property update "true";
+    public Exception(string code, string ruleName)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Exception()
+                property "dataio.default" "true";
+}
+
+public class Globals
+        property "ads.typeId" "28"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Globals"
+        property "de.generated" "true"
+{
+    public java.lang.Long IT214_COUNTER
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT214_COUNTER"
+                property update "true";
+    public SwitchIndicatorValue NY_TX_ADJ_IND
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NY_TX_ADJ_IND"
+                property update "true";
+    public Globals(java.lang.Long IT214_COUNTER, SwitchIndicatorValue NY_TX_ADJ_IND)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Globals()
+                property "dataio.default" "true";
+}
+
+public class IT112R1
+        property "ads.typeId" "22"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IT112R1"
+        property "de.generated" "true"
+{
+    public AmountField1 RC_LSR_CR_AMT
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RC_LSR_CR_AMT"
+                property update "true";
+    public IT112R1(AmountField1 RC_LSR_CR_AMT)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public IT112R1()
+                property "dataio.default" "true";
+}
+
+public class IT196
+        property "ads.typeId" "14"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IT196"
+        property "de.generated" "true"
+{
+    public AmountField1 NYS_ITZDED_AMT
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NYS_ITZDED_AMT"
+                property update "true";
+    public IT196(AmountField1 NYS_ITZDED_AMT)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public IT196()
+                property "dataio.default" "true";
+}
+
+public class IT201
+        property "ads.typeId" "4"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IT201"
+        property "de.generated" "true"
+{
+    public AmountField1 FEDAGI_RCOMP_AMT
+                property "ads.attributeId" "79"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FEDAGI_RCOMP_AMT"
+                property update "true";
+    public Globals globals
+                property "ads.attributeId" "80"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "globals"
+                property update "true";
+    public IT201(AmountField1 FEDAGI_RCOMP_AMT, Globals globals)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public IT201()
+                property "dataio.default" "true";
+}
+
+public class IT2141
+        property "ads.typeId" "17"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IT2141"
+        property "de.generated" "true"
+{
+    public java.util.List CISSCodes domain 0,* class CISSCode
+                property "ads.attributeId" "9"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CISSCodes"
+                property update "true";
+    public AmountField1 FEDAGI_RCOMP_AMT
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FEDAGI_RCOMP_AMT"
+                property update "true";
+    public AdjustedReasonCodeId TEMP_ARC
+                property "ads.attributeId" "15"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TEMP_ARC"
+                property update "true";
+    public SwitchIndicatorValue TEMP_CR_DENIED_IND
+                property "ads.attributeId" "11"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TEMP_CR_DENIED_IND"
+                property update "true";
+    public double TEMP_FAGI
+                property "ads.attributeId" "10"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TEMP_FAGI"
+                property update "true";
+    public double TEMP_LINE18
+                property "ads.attributeId" "12"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TEMP_LINE18"
+                property update "true";
+    public double TEMP_LINE30
+                property "ads.attributeId" "13"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TEMP_LINE30"
+                property update "true";
+    public Globals globals
+                property "ads.attributeId" "14"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "globals"
+                property update "true";
+    public AmountField1 r_CR_LMT_AMT
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "R_CR_LMT_AMT"
+                property update "true";
+    public AmountField1 r_GRSS_INC_R_AMT
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "R_GRSS_INC_R_AMT"
+                property update "true";
+    public AmountField1 r_RL_PROP_CR_AMT
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "R_RL_PROP_CR_AMT"
+                property update "true";
+    public AmountField1 r_RL_PROP_TX_AMT
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "R_RL_PROP_TX_AMT"
+                property update "true";
+    public IndicatorType03Field r_RSDT_IND
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "R_RSDT_IND"
+                property update "true";
+    public AmountField1 r_TX_AVL_CR_AMT
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "R_TX_AVL_CR_AMT"
+                property update "true";
+    public AmountField1 r_TX_EXMPT_AMT
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "R_TX_EXMPT_AMT"
+                property update "true";
+    public IT2141(java.util.List CISSCodes domain 0,* class CISSCode, 
+        AmountField1 FEDAGI_RCOMP_AMT, 
+        AdjustedReasonCodeId TEMP_ARC, 
+        SwitchIndicatorValue TEMP_CR_DENIED_IND, 
+        double TEMP_FAGI, 
+        double TEMP_LINE18, 
+        double TEMP_LINE30, 
+        Globals globals, 
+        AmountField1 r_CR_LMT_AMT, 
+        AmountField1 r_GRSS_INC_R_AMT, 
+        AmountField1 r_RL_PROP_CR_AMT, 
+        AmountField1 r_RL_PROP_TX_AMT, 
+        IndicatorType03Field r_RSDT_IND, 
+        AmountField1 r_TX_AVL_CR_AMT, 
+        AmountField1 r_TX_EXMPT_AMT)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public IT2141()
+                property "dataio.default" "true";
+    public void addTo_CISSCodes(CISSCode CISSCodes)
+                property collectionAttribute "CISSCodes"
+                property update "true";
+    public void clear_CISSCodes()
+                property collectionAttribute "CISSCodes"
+                property update "true";
+    public void removeFrom_CISSCodes(CISSCode CISSCodes)
+                property collectionAttribute "CISSCodes"
+                property update "true";
+    public void set_CISSCodes(java.util.Collection CISSCodes domain 0,* class CISSCode)
+                property collectionAttribute "CISSCodes"
+                property update "true";
+}
+
+public class IT229
+        property "ads.typeId" "27"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IT229"
+        property "de.generated" "true"
+{
+    public java.util.List QRPT_ROWs domain 0,* class QRPTRow
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "QRPT_ROWs"
+                property update "true";
+    public AmountField1 RPTR_QRPT_PD_AMT
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RPTR_QRPT_PD_AMT"
+                property update "true";
+    public IT229(java.util.List QRPT_ROWs domain 0,* class QRPTRow, 
+        AmountField1 RPTR_QRPT_PD_AMT)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public IT229()
+                property "dataio.default" "true";
+    public void addTo_QRPT_ROWs(QRPTRow QRPT_ROWs)
+                property collectionAttribute "QRPT_ROWs"
+                property update "true";
+    public void clear_QRPT_ROWs()
+                property collectionAttribute "QRPT_ROWs"
+                property update "true";
+    public void removeFrom_QRPT_ROWs(QRPTRow QRPT_ROWs)
+                property collectionAttribute "QRPT_ROWs"
+                property update "true";
+    public void set_QRPT_ROWs(java.util.Collection QRPT_ROWs domain 0,* class QRPTRow)
+                property collectionAttribute "QRPT_ROWs"
+                property update "true";
+}
+
+public class IT558
+        property "ads.typeId" "5"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IT558"
+        property "de.generated" "true"
+{
+    public AmountField1 ADJ_TOT_ADD_AMT
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ADJ_TOT_ADD_AMT"
+                property update "true";
+    public AmountField1 ADJ_TOT_SUBT_AMT
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ADJ_TOT_SUBT_AMT"
+                property update "true";
+    public IT558(AmountField1 ADJ_TOT_ADD_AMT, AmountField1 ADJ_TOT_SUBT_AMT)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public IT558()
+                property "dataio.default" "true";
+}
+
+public class IndicatorType03Field
+        property "ads.typeId" "6"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IndicatorType03Field"
+        property "de.generated" "true"
+{
+    public IndicatorType03Value claimed
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "claimed"
+                property update "true";
+    public IndicatorType03Value value
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "value"
+                property update "true";
+    public IndicatorType03Field(IndicatorType03Value claimed, IndicatorType03Value value)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public IndicatorType03Field()
+                property "dataio.default" "true";
+}
+
+public class IndicatorType03Value
+        extends java.lang.Enum
+        property "ads.typeId" "13"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IndicatorType03Value"
+        property "de.generated" "true"
+{
+    domain {static $, static $1}
+    public static final readonly IndicatorType03Value $
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "1";
+    public static final readonly IndicatorType03Value $1
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "2";
+}
+
+public class IndicatorType13Field
+        property "ads.typeId" "15"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IndicatorType13Field"
+        property "de.generated" "true"
+{
+    public IndicatorType13Value claimed
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "claimed"
+                property update "true";
+    public IndicatorType13Value value
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "value"
+                property update "true";
+    public IndicatorType13Field(IndicatorType13Value claimed, IndicatorType13Value value)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public IndicatorType13Field()
+                property "dataio.default" "true";
+}
+
+public class IndicatorType13Value
+        extends java.lang.Enum
+        property "ads.typeId" "12"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IndicatorType13Value"
+        property "de.generated" "true"
+{
+    domain {static $, static $1, static $2}
+    public static final readonly IndicatorType13Value $
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "1";
+    public static final readonly IndicatorType13Value $1
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "2";
+    public static final readonly IndicatorType13Value $2
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "3";
+}
+
+public class IndicatorType15Field
+        property "ads.typeId" "20"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IndicatorType15Field"
+        property "de.generated" "true"
+{
+    public java.lang.Long claimed
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "claimed"
+                property update "true";
+    public java.lang.Long value
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "value"
+                property update "true";
+    public IndicatorType15Field(java.lang.Long claimed, java.lang.Long value)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public IndicatorType15Field()
+                property "dataio.default" "true";
+}
+
+public class IndicatorType15Value
+        extends java.lang.Enum
+        property "ads.typeId" "21"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IndicatorType15Value"
+        property "de.generated" "true"
+{
+    domain {static $, static $1, static $2, static $3, static $4}
+    public static final readonly IndicatorType15Value $
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "1";
+    public static final readonly IndicatorType15Value $1
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "2";
+    public static final readonly IndicatorType15Value $2
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "3";
+    public static final readonly IndicatorType15Value $3
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "4";
+    public static final readonly IndicatorType15Value $4
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "5";
+}
+
+public class PITReturn
+        property "ads.typeId" "25"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "PITReturn"
+        property "de.generated" "true"
+{
+    public java.util.List IT112Rs domain 0,* class IT112R1
+                property "ads.attributeId" "9"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT112Rs"
+                property update "true";
+    public IT196 IT196
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT196"
+                property update "true";
+    public IT201 IT201
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT201"
+                property update "true";
+    public IT2141 IT214
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT214"
+                property update "true";
+    public IT229 IT229
+                property "ads.attributeId" "12"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT229"
+                property update "true";
+    public IT558 IT558
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT558"
+                property update "true";
+    public java.util.List exceptionses domain 0,* class Exception
+                property "ads.attributeId" "11"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "exceptionses"
+                property update "true";
+    public ReturnHeader header
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "header"
+                property update "true";
+    public PITReturn(java.util.List IT112Rs domain 0,* class IT112R1, 
+        IT196 IT196, 
+        IT201 IT201, 
+        IT2141 IT214, 
+        IT229 IT229, 
+        IT558 IT558, 
+        java.util.List exceptionses domain 0,* class Exception, 
+        ReturnHeader header)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public PITReturn()
+                property "dataio.default" "true";
+    public void addTo_IT112Rs(IT112R1 IT112Rs)
+                property collectionAttribute "IT112Rs"
+                property update "true";
+    public void addTo_exceptionses(Exception exceptionses)
+                property collectionAttribute "exceptionses"
+                property update "true";
+    public void clear_IT112Rs()
+                property collectionAttribute "IT112Rs"
+                property update "true";
+    public void clear_exceptionses()
+                property collectionAttribute "exceptionses"
+                property update "true";
+    public void removeFrom_IT112Rs(IT112R1 IT112Rs)
+                property collectionAttribute "IT112Rs"
+                property update "true";
+    public void removeFrom_exceptionses(Exception exceptionses)
+                property collectionAttribute "exceptionses"
+                property update "true";
+    public void set_IT112Rs(java.util.Collection IT112Rs domain 0,* class IT112R1)
+                property collectionAttribute "IT112Rs"
+                property update "true";
+    public void set_exceptionses(java.util.Collection exceptionses domain 0,* class Exception)
+                property collectionAttribute "exceptionses"
+                property update "true";
+}
+
+public class QRPTRow
+        property "ads.typeId" "26"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "QRPTRow"
+        property "de.generated" "true"
+{
+    public double ALLOC_PCT
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ALLOC_PCT"
+                property update "true";
+    public double PI_PD_RES_AMT
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PI_PD_RES_AMT"
+                property update "true";
+    public double RP_TX_PD_AMT
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RP_TX_PD_AMT"
+                property update "true";
+    public double STAR_CR_SCH_TX_AMT
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "STAR_CR_SCH_TX_AMT"
+                property update "true";
+    public QRPTRow(double ALLOC_PCT, double PI_PD_RES_AMT, double RP_TX_PD_AMT, double STAR_CR_SCH_TX_AMT)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public QRPTRow()
+                property "dataio.default" "true";
+}
+
+public class ReturnHeader
+        property "ads.typeId" "19"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "ReturnHeader"
+        property "de.generated" "true"
+{
+    public IndicatorType13Field NYC_LIAB_IND
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NYC_LIAB_IND"
+                property update "true";
+    public ReturnHeader(IndicatorType13Field NYC_LIAB_IND)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public ReturnHeader()
+                property "dataio.default" "true";
+}
+
+public class SwitchIndicatorValue
+        extends java.lang.Enum
+        property "ads.typeId" "7"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "SwitchIndicatorValue"
+        property "de.generated" "true"
+{
+    domain {static absent, static present}
+    public static final readonly SwitchIndicatorValue absent
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Absent";
+    public static final readonly SwitchIndicatorValue present
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Present";
+}
+

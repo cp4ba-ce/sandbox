@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>359ff3c3-a8d4-4159-87d1-0c3f417fb456</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_0" name="input form">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="IT2141" collection="false" name="input form"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="input form" typeRef="IT2141"/>
+    </inputData>
+    <decision id="node_1" name="computed IT214">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="IT2141" collection="false" name="input form"/>
+                <input bomType="IT201" collection="false" name="IT201"/>
+                <input bomType="gov.ny.its.pit.refdata.ReferenceData" collection="false" name="reference data"/>
+                <output bomType="IT2141" collection="false" name="computed IT214"/>
+                <rule defaultRule="false" href="node_1/initialize%20decision.drl" kind="BusinessRule" name="initialize decision"/>
+                <rule defaultRule="false" href="node_1/2.1%20-%20determine%20resident%20state%20with%20IT201.drl" kind="BusinessRule" name="2.1 - determine resident state with IT201"/>
+                <rule defaultRule="false" href="node_1/3%20-%20household%20gross%20income.drl" kind="BusinessRule" name="3 - household gross income"/>
+                <rule defaultRule="false" href="node_1/4%20-%20household%20gross%20income%20with%20RPTC.drl" kind="BusinessRule" name="4 - household gross income with RPTC"/>
+                <rule defaultRule="false" href="node_1/5.1%20-%20compute%20temp%20line%2018%20with%20RPTC.drl" kind="BusinessRule" name="5.1 - compute temp line 18 with RPTC"/>
+                <rule defaultRule="false" href="node_1/5.2%20-%20compute%20temp%20line%2018.drl" kind="BusinessRule" name="5.2 - compute temp line 18"/>
+                <rule defaultRule="false" href="node_1/6%20-%20compute%20temp%20line%2030.drl" kind="BusinessRule" name="6 - compute temp line 30"/>
+                <rule defaultRule="false" href="node_1/11.1%20-%20household%20gross%20income.drl" kind="BusinessRule" name="11.1 - household gross income"/>
+                <rule defaultRule="false" href="node_1/11.2%20-%20household%20gross%20income.drl" kind="BusinessRule" name="11.2 - household gross income"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="computed IT214" typeRef="IT2141"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_3"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_2" name="IT201">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="IT201" collection="false" name="IT201"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_2_ii" name="IT201" typeRef="IT201"/>
+    </inputData>
+    <inputData id="node_3" name="reference data">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="gov.ny.its.pit.refdata.ReferenceData" collection="false" name="reference data"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_3_ii" name="reference data" typeRef="gov.ny.its.pit.refdata.ReferenceData"/>
+    </inputData>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

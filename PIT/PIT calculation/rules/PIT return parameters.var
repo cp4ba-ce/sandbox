@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>PIT return parameters</name>
+  <uuid>8038f44a-19e7-4e23-b0ca-b2f4f2929a20</uuid>
+  <variables name="IT201" type="IT201" initialValue="" verbalization="IT201" jsonName=""/>
+  <variables name="IT558" type="IT558" initialValue="" verbalization="IT558" jsonName=""/>
+  <variables name="IT196" type="IT196" initialValue="" verbalization="IT196" jsonName=""/>
+  <variables name="referenceData" type="gov.ny.its.pit.refdata.ReferenceData" initialValue="" verbalization="reference data" jsonName=""/>
+  <variables name="IT214" type="IT2141" initialValue="" verbalization="IT214" jsonName=""/>
+  <variables name="IT112R" type="java.util.List&lt;IT112R1>" initialValue="" verbalization="IT112Rs" jsonName=""/>
+  <variables name="exceptions" type="java.util.List&lt;Exception>" initialValue="" verbalization="exceptions" jsonName=""/>
+  <variables name="PITReturn" type="PITReturn" initialValue="" verbalization="PIT return" jsonName=""/>
+  <variables name="globals" type="Globals" initialValue="" verbalization="globals" jsonName=""/>
+  <variables name="IT229" type="IT229" initialValue="" verbalization="IT229" jsonName=""/>
+</ilog.rules.studio.model.base:VariableSet>

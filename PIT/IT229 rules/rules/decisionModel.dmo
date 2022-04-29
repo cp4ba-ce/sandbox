@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>0ee04c74-d0e5-463d-acb1-0f037d621573</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_0" name="input form">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="IT229" collection="false" name="input form"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="input form" typeRef="IT229"/>
+    </inputData>
+    <decision id="node_1" name="Computed IT229">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="IT229" collection="false" name="input form"/>
+                <output bomType="IT229" collection="false" name="Computed IT229"/>
+                <rule defaultRule="false" href="node_1/initialize%20decision.drl" kind="BusinessRule" name="initialize decision"/>
+                <rule defaultRule="false" href="node_1/accumulate%20schedule%20B%20table.drl" kind="BusinessRule" name="accumulate schedule B table"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="Computed IT229" typeRef="IT229"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+    </decision>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

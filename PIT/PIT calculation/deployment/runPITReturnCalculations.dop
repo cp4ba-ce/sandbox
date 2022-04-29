@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="PIT-calculation" usingRuleflow="true" ruleflowName="PIT return calculation" targetRuleProjectName="PIT calculation">
+  <name>runPITReturnCalculations</name>
+  <uuid>cdd8816d-04c1-49ba-9b35-5b4be7200bb4</uuid>
+  <referencedVariables variableName="PITReturn" variableSetName="PIT return parameters" direction="IN_OUT">
+    <variableSet href="../rules/PIT%20return%20parameters.var#8038f44a-19e7-4e23-b0ca-b2f4f2929a20"/>
+  </referencedVariables>
+  <ruleflow href="../rules/PIT%20return%20calculation.rfl#871f68fe-7986-4121-a8f1-90b479b0697d"/>
+  <targetRuleProject href="../../PIT%20calculation#b56b9da0-a556-4f67-828e-7d222933dcb7"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["pitReturnCalculations"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>
