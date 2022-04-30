@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>ada3f45d-a037-4f6f-aa04-7e487900d862</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_0" name="input form">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="IT2141" collection="false" name="input form"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="input form" typeRef="IT2141"/>
+    </inputData>
+    <decision id="node_1" name="Computed IT214">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="IT2141" collection="false" name="input form"/>
+                <input bomType="IT201" collection="false" name="IT201"/>
+                <input bomType="gov.ny.its.pit.refdata.ReferenceData" collection="false" name="reference data"/>
+                <output bomType="IT2141" collection="false" name="Computed IT214"/>
+                <rule defaultRule="false" href="node_1/initialize%20decision.drl" kind="BusinessRule" name="initialize decision"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="Computed IT214" typeRef="IT2141"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_3"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_2" name="IT201">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="IT201" collection="false" name="IT201"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_2_ii" name="IT201" typeRef="IT201"/>
+    </inputData>
+    <inputData id="node_3" name="reference data">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="gov.ny.its.pit.refdata.ReferenceData" collection="false" name="reference data"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_3_ii" name="reference data" typeRef="gov.ny.its.pit.refdata.ReferenceData"/>
+    </inputData>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

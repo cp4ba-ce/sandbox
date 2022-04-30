@@ -27,6 +27,16 @@
             <version>LATEST-SNAPSHOT</version>
         </dependency>
         <dependency>
+            <groupId>_7d0970897.sandbox.pit</groupId>
+            <artifactId>yourIT214Rules</artifactId>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>_7d0970897.sandbox.pit</groupId>
+            <artifactId>yourIT229Rules</artifactId>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>cp4admin.nys_oits.pit</groupId>
             <artifactId>forms</artifactId>
             <version>LATEST-SNAPSHOT</version>
@@ -45,6 +55,8 @@
     </dependencies>
 
     
+
+
 
 
 
@@ -131,6 +143,24 @@
                                 <artifactItem>
                                     <groupId>cp4admin.nys_oits.pit</groupId>
                                     <artifactId>PITCalculation</artifactId>
+                                    <version>LATEST-SNAPSHOT</version>
+                                    <type>jar</type>
+                                    <overWrite>false</overWrite>
+                                    <includes>**/*.class</includes>
+                                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>_7d0970897.sandbox.pit</groupId>
+                                    <artifactId>yourIT214Rules</artifactId>
+                                    <version>LATEST-SNAPSHOT</version>
+                                    <type>jar</type>
+                                    <overWrite>false</overWrite>
+                                    <includes>**/*.class</includes>
+                                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>_7d0970897.sandbox.pit</groupId>
+                                    <artifactId>yourIT229Rules</artifactId>
                                     <version>LATEST-SNAPSHOT</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
